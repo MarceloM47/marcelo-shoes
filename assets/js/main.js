@@ -16,3 +16,10 @@ links.forEach(link => {
         document.querySelector(".menu-screen").classList.remove("active")
     })
 });
+
+//Detectar navegador que el navegador es firefox y cambiar estilos al slider
+var es_firefox = navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
+var container_image = document.querySelector("#container_image")
+if(es_firefox){
+	container_image.style.width = 300+"%"
+}
