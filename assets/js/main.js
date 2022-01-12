@@ -23,3 +23,5 @@ var container_image = document.querySelector("#container_image")
 if(es_firefox){
 	container_image.style.width = 300+"%"
 }
+
+document.body.style.overflowX = "hidden"
